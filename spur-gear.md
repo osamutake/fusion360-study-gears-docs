@@ -1,4 +1,5 @@
 # Spur Gear
+[[Go back to fusion360-study-gears Tutorials]](https://github.com/osamutake/fusion360-study-gears/#tutorials)
 
 Let's create four spur gears and combine them as shown in the figure to see how they rotate.
 
@@ -185,3 +186,6 @@ To solve the issue, suppress the motion link between gears 1 and 3, and create a
 This allows Fusion 360 to correctly simulate gear movement with backlash.
 
 <a href="assets/spur33.gif"><img src="assets/spur33.gif"/></a>
+
+----
+[[Go back to fusion360-study-gears Tutorials]](https://github.com/osamutake/fusion360-study-gears/#tutorials)

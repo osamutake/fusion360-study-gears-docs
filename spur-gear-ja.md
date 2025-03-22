@@ -1,5 +1,8 @@
 # 平歯車
 
+[[fusion360-study-gears チュートリアルへ戻る]](https://github.com/osamutake/fusion360-study-gears/blob/main/README-ja.md#チュートリアル)
+
+
 平歯車を４つ作成して、図のように組み合わせて回してみましょう。
 
 <a href="assets/spur.gif"><img src="assets/spur.gif" width="200"/></a>
@@ -193,3 +196,6 @@
 すると今度は解析を正しく行えて、バックラッシュを考慮に入れた歯車間の運動の伝達を再現できました。
 
 <a href="assets/spur33.gif"><img src="assets/spur33.gif"/></a>
+
+----
+[[fusion360-study-gears チュートリアルへ戻る]](https://github.com/osamutake/fusion360-study-gears/blob/main/README-ja.md#チュートリアル)

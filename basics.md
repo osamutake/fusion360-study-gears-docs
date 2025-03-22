@@ -1,5 +1,7 @@
 # Various Parameters of a Gear
 
+[[Go back to fusion360-study-gears Tutorials]](https://github.com/osamutake/fusion360-study-gears/#tutorials)
+
 ## Module $m$
 
 The module of a gear is a parameter that determines the size of the gear teeth and has the dimension of length.
@@ -132,3 +134,7 @@ For non-shifted gears, the center distance can be determined by contacting the "
 The calculation includes the inverse calculation of the involute function, which cannot be performed using inverse trigonometric functions and requires dedicated iterative calculations.
 
 Additionally, depending on the combination of the number of teeth and shift amounts, the gears may interfere with each other and not rotate.
+
+----
+
+[[Go back to fusion360-study-gears Tutorials]](https://github.com/osamutake/fusion360-study-gears/#tutorials)

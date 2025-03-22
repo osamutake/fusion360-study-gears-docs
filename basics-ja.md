@@ -1,5 +1,7 @@
 # 歯車形状を決める各種パラメータについて簡単に紹介します
 
+[[fusion360-study-gears チュートリアルへ戻る]](https://github.com/osamutake/fusion360-study-gears/blob/main/README-ja.md#チュートリアル)
+
 ## モジュール $m$
 
 歯の大きさを決めるパラメータで、長さの次元を持ちます。
@@ -141,3 +143,5 @@
 
 また、歯数と転位量との組み合わせによっては相手の歯車と干渉してしまい、回転させられない場合もあります。
 
+----
+[[fusion360-study-gears チュートリアルへ戻る]](https://github.com/osamutake/fusion360-study-gears/blob/main/README-ja.md#チュートリアル)
