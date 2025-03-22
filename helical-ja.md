@@ -37,7 +37,7 @@
 <a href="assets/helical1.jpg"><img src="assets/helical1.jpg" width="300"></a>
 <a href="assets/helical2.jpg"><img src="assets/helical2.jpg" width="250"></a>
 
-* 歯当たりを確認する
+## 歯当たりを確認する
 
 「調査」メニューの「干渉」を起動し、２つの歯車ボディを選択します。
 
@@ -52,7 +52,7 @@
 <a href="assets/helical5.png"><img src="assets/helical5.png" width="250"></a>
 <a href="assets/helical6.png"><img src="assets/helical6.png" width="250"></a>
 
-* はすば歯車のメリット [#q6560e91]
+## はすば歯車のメリット
 
 はすば歯車は異なる回転方向を持つ多数の平歯車が歯車の厚さ方向に重なっているものとみなせます。したがって厚さ方向に見て一部の噛み合いが取れていない時も他の部分では噛み合いが取れていることが多く、また、歯が当たったり、離れたりするタイミングも厚さ方向で分散するため、安定した噛み合いと低騒音を実現できるのだそうです。
 
