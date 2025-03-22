@@ -1,5 +1,7 @@
 # パラメータリファレンス
 
+[[fusion360-study-gears チュートリアルへ戻る]](https://github.com/osamutake/fusion360-study-gears/blob/main/README-ja.md#チュートリアル)
+
 値をいろいろ変えながら生成してみると理解しやすいと思います。
 
 その際、小さなものから始めるようにしてください。
@@ -11,7 +13,7 @@
 平歯車（すぐ歯、はす歯、内歯車）およびウォームホイールを生成できます
 <table><tr>
 <td>
-<img src="assets/tab_cylinder.png" width="250"/>
+<img src="assets/tab_cylinder.png" width="250"/><br>
 <img src="assets/tab_worm-wheel.png" width="250"/>
 <td>
 <dl>
@@ -147,3 +149,7 @@ Radii に２つの値だけ入れれば、初期半径と終了半径でらせ�
 平歯車（はすば含む）、ラック、ウォームに対して有効
 </dl>
 </table>
+
+----
+
+[[fusion360-study-gears チュートリアルへ戻る]](https://github.com/osamutake/fusion360-study-gears/blob/main/README-ja.md#チュートリアル)
