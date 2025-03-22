@@ -34,8 +34,8 @@
 
 移動量は式のままで書けるので、50.9115 mm をコピペするのでなく 4 mm * (12 + 6) / cos(45 deg) / 2 などと書くことができます。
 
-<img src="assets/helical1.jpg" width="300">
-<img src="assets/helical2.jpg" width="250">
+<a href="assets/helical1.jpg"><img src="assets/helical1.jpg" width="300"></a>
+<a href="assets/helical2.jpg"><img src="assets/helical2.jpg" width="250"></a>
 
 * 歯当たりを確認する
 
@@ -43,14 +43,14 @@
 
 すると「動かしたコンポーネントの位置を元に戻すか？」と聞かれるので、「位置をキャプチャ」を選択して現在位置を確定しておきます。
 
-<img src="assets/helical3.jpg" width="300">
-<img src="assets/helical4.jpg" width="200">
+<a href="assets/helical3.jpg"><img src="assets/helical3.jpg" width="300"></a>
+<a href="assets/helical4.jpg"><img src="assets/helical4.jpg" width="200"></a>
 
 ２つの歯車ボディを選択してから「計算」をクリックすると、
 干渉する部分を表示するとともにその体積が計算されます。
 
-<img src="assets/helical5.png" width="250">
-<img src="assets/helical6.png" width="250">
+<a href="assets/helical5.png"><img src="assets/helical5.png" width="250"></a>
+<a href="assets/helical6.png"><img src="assets/helical6.png" width="250"></a>
 
 * はすば歯車のメリット [#q6560e91]
 
@@ -58,13 +58,13 @@
 
 これを見るために、２つの歯車を少しずつ回転させながら干渉の計算を行い、それらを繋げて動画にしてみました。
 
-<img src="assets/helical7.gif" width="500">
+<a href="assets/helical7.gif"><img src="assets/helical7.gif" width="500"></a>
 
 ここでは右側の歯車が小さいために切り下げが生じており、噛み合いが外れる時間が大きくなっているのですが、それでも歯車の回転に伴い歯と歯の接触する領域が歯の厚さ方向に連続的に移動しながら、どこかしらが噛み合う状況が続いていることを確認できます。また、歯の接触面積は一気に増えたり減ったりせず徐々に面積が増えたり減ったりしていて、低騒音になりそうな感じも見て取れます。（この動画は「干渉」検査の結果を１枚１枚手で繋ぎ合わせて作ったものです。残念ながらこのような動画を自動的に作成する機能はない＆簡単には作れない、のだと思います？？？）
 
 同じことを平歯車で行ったのと比べると、この差は歴然です。平歯車では途中で２つの歯車が全く接触しなくなる時間が生じてしまっており、また、歯の接触も瞬間敵に増えたり、減ったりしていて、振動や騒音が大きそうです。
 
-<img src="assets/helical8.gif" width="500">
+<a href="assets/helical8.gif"><img src="assets/helical8.gif" width="500"></a>
 
 # やまば歯車 ← はすば歯車のデメリットをなくす
 
@@ -74,12 +74,12 @@
 
 やまば歯車ははすば歯車を上面で鏡面対称に複製することで簡単に作成できます。
 
-<img src="assets/helical9.jpg" width="200">
-<img src="assets/helical10.jpg" width="270">
+<a href="assets/helical9.jpg"><img src="assets/helical9.jpg" width="200"></a>
+<a href="assets/helical10.jpg"><img src="assets/helical10.jpg" width="270"></a>
 
 ２つの歯車共に鏡面複製するとやまば歯車の完成です。
 
-<img src="assets/helical11.gif" width="400">
+<a href="assets/helical11.gif"><img src="assets/helical11.gif" width="400"></a>
 
 ## 間に隙間を空ける
 
@@ -87,9 +87,9 @@
 
 ここに遊びを作るために、鏡面対称操作をする前に歯車上面を負のテーパー角付きで押し出すことにより面取り効果を得て、 それから対称複製してみたのがこちらです。
 
-<img src="assets/helical12.jpg" width="400">
+<a href="assets/helical12.jpg"><img src="assets/helical12.jpg" width="400"></a>
 
-<img src="assets/helical13.gif" width="400">
+<a href="assets/helical13.jpg"><img src="assets/helical13.gif" width="400"></a>
 
 ちょっと変な形ではありますが、45度のテーパー角であれば３Ｄプリンターでもサポートなしに印刷できるので、悪くはないんじゃないかと思っています。
 
