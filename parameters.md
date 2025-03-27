@@ -13,8 +13,9 @@ This tab allows generation of cylindrical gears, i.e. spur gears, helical gears,
 
 <table><tr>
 <td>
-<img src="assets/tab_cylinder.png" width="250"/><br>
-<img src="assets/tab_worm-wheel.png" width="250"/>
+<a href="assets/tab_cylinder.png"><img src="assets/tab_cylinder.png" width="250"/></a>
+<br>
+<a href="assets/tab_worm-wheel.png"><img src="assets/tab_worm-wheel.png" width="250"/></a>
 <td>
 <dl>
 <dt>Module
@@ -47,7 +48,7 @@ This tab allows generation of cylindrical gears, i.e. spur gears, helical gears,
 This tab allows generation of racks (straight, helical) and worms.
 
 <table><tr><td>
-<img src="assets/tab_rack-worm.png" width="250"/>
+<a href="assets/tab_rack-worm.png"><img src="assets/tab_rack-worm.png" width="250"/></a>
 <td>
 <dl>
 <dt>Module
@@ -73,7 +74,7 @@ Helix angle for worms is automatically calculated
 This tab allows generation of bevel gears (straight, helical).
 
 <table><tr><td>
-<img src="assets/tab_bevel.png" width="250"/>
+<a href="assets/tab_bevel.png"><img src="assets/tab_bevel.png" width="250"/></a>
 <td>
 <dl>
 <dt>Axes Angle
@@ -97,7 +98,7 @@ At this moment, this specifies the normal module, so be careful
 Tab for generating spirals and cam shapes.
 
 <table><tr><td>
-<img src="assets/tab_spiral.png" width="300" />
+<a href="assets/tab_spiral.png"><img src="assets/tab_spiral.png" width="300" /></a>
 <td>
 <dl>
 <dt>Total Angle
@@ -121,7 +122,7 @@ On the other hand, by entering many values there and setting Total Angle to 360 
 Detailed settings common to many tabs.
 
 <table><tr><td>
-<img src="assets/details.png" width="250" />
+<a href="assets/details.png"><img src="assets/details.png" width="250" /></a>
 <td>
 <dl>
 <dt>Pressure Angle

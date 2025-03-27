@@ -92,4 +92,54 @@ To create some gap there, extruding the top surface of the gear with a negative 
 
 Although the shape is a bit weird, a 45-degree taper angle allows 3D printing without support, making it a viable option.
 
+# Adjusting the Center Distance of Helical Gears to a Convenient Number
+
+For helical gears, the pitch diameter is not an integer multiple of the module, resulting in an irrational center distance for standard gears. This makes design difficult, so two methods are introduced below to adjust the center distance to a convenient number.
+
+## Using Profile Shift to Adjust the Center Distance
+
+Usually, profile shift is used to adjust the center distance.
+
+Profile shift means moving the position of the rack cutter closer or further during gear cutting, allowing the meshing distance to be changed without altering the module or number of teeth. However, for gears with a finite number of teeth, the amount of profile shift and the change in meshing distance are not equal. Instead, a complex calculation is required to obtain the amount of profile shift to achieve the desired center distance.
+
+Using the [Gear Design Calculator (Spur and Helical Gears: Calculate Profile Shift from Center Distance)](../calc.html?calculator=1), this calculation can be performed.
+
+First, to find the center distance without profile shift, [Gear Design Calculator (Spur and Helical Gears: Calculate Center Distance)](../calc.html?calculator=0) was used as following:
+
+- Module: 4
+- Number of Teeth: 6 & 12
+- Helix Angle: 45 deg
+
+The center distance was 50.9117 mm without profile shift.
+
+<a href="assets/helical14.png"><img src="assets/helical14.png" width="400" /></a>
+
+To adjust this to exactly 50 mm, [Gear Design Calculator (Spur and Helical Gears: Calculate Profile Shift from Center Distance)](../calc.html?calculator=1) was used to find the required profile shift.
+
+<a href="assets/helical15.png"><img src="assets/helical15.png" width="400" /></a>
+
+It showed that a combined shift coefficient of -0.219884 is needed.
+
+By applying a profile shift of -0.219884 to the 12-tooth gear while keeping the 6-tooth gear at zero shift, the gears meshed perfectly at a center distance of 50 mm as calculated.
+
+<a href="assets/helical16.jpg"><img src="assets/helical16.jpg" width="400" /></a>
+
+## Using Non-Standard Module to Adjust the Center Distance
+
+When using a 3D printer to output gears individually, it is not necessary to use standard modules, so adjusting the center distance with a non-standard module is also convenient.
+
+For this purpose, I added a function to the [Gear Design Calculator (Spur and Helical Gears: Calculate Center Distance)](../calc.html?calculator=0) to calculate the adjusted module value from the desired center distance.
+
+<a href="assets/helical17.png"><img src="assets/helical17.png" width="400" /></a>
+
+It showed that a module of 3.92837 is needed.
+
+Testing this, the gears meshed perfectly as calculated.
+
+<a href="assets/helical18.png"><img src="assets/helical18.png" width="200" /></a>
+<a href="assets/helical19.png"><img src="assets/helical19.png" width="200" /></a>
+
+<a href="assets/helical20.jpg"><img src="assets/helical20.jpg" width="400" /></a>
+
+----
 [[Back to fusion360-study-gears tutorial]](https://github.com/osamutake/fusion360-study-gears/blob/main/README.md#tutorial)

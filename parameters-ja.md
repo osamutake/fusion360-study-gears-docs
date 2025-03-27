@@ -13,8 +13,9 @@
 平歯車（すぐ歯、はす歯、内歯車）およびウォームホイールを生成できます
 <table><tr>
 <td>
-<img src="assets/tab_cylinder.png" width="250"/><br>
-<img src="assets/tab_worm-wheel.png" width="250"/>
+<a href="assets/tab_cylinder.png"><img src="assets/tab_cylinder.png" width="250"/></a>
+<br>
+<a href="assets/tab_worm-wheel.png"><img src="assets/tab_worm-wheel.png" width="250"/></a>
 <td>
 <dl>
 <dt>Module
@@ -47,7 +48,7 @@
 ラック（すぐ歯、はす歯）およびウォームを生成します。
 
 <table><tr><td>
-<img src="assets/tab_rack-worm.png" width="250"/>
+<a href="assets/tab_rack-worm.png"><img src="assets/tab_rack-worm.png" width="250"/></a>
 <td>
 <dl>
 <dt>Module
@@ -73,7 +74,7 @@
 かさ歯車（すぐ歯、はす歯）を生成します。
 
 <table><tr><td>
-<img src="assets/tab_bevel.png" width="250"/>
+<a href="assets/tab_bevel.png"><img src="assets/tab_bevel.png" width="250"/></a>
 <td>
 <dl>
 <dt>Axes Angle
@@ -97,7 +98,7 @@
 らせんやカム形状を生成するためのタブ。
 
 <table><tr><td>
-<img src="assets/tab_spiral.png" width="300" />
+<a href="assets/tab_spiral.png"><img src="assets/tab_spiral.png" width="300" /></a>
 <td>
 <dl>
 <dt>Total Angle
@@ -121,7 +122,7 @@ Radii に２つの値だけ入れれば、初期半径と終了半径でらせ�
 多くのタブに共通の詳細設定項目。
 
 <table><tr><td>
-<img src="assets/details.png" width="250" />
+<a href="assets/details.png"><img src="assets/details.png" width="250" /></a>
 <td>
 <dl>
 <dt>Pressure Angle
