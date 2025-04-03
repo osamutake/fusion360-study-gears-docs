@@ -57,6 +57,14 @@ If the tooth profile were generated using only spherical involute curves without
 
 The larger gear at the bottom in the figure does not experience undercutting, but a spherical trochoidal curve also appears as a fillet that smoothly connects the involute region at the tooth tip to the tooth bottom.
 
+<a href="assets/bevel10.gif"><img src="assets/bevel10.gif" width="500"></a>
+
+Bevel gears were generated with module 6 and numbers of teeth 30 and 15 with 90 deg between axes with backlash set to -0.03 mm. We can check the contact between the two gears by visualizing the interfering part during their combined rotation.
+
+I wanted to have smaller values for backlash but smaller backlash caused errors in boolean operation of gear shapes. So, I set unwanted large negative backlash to have clear overlap between the gears.
+
+It can be confirmed that the tooth shapes generated from the spherical involute curve contact nicely with each other.
+
 ## Supporting Spiral Teeth
 
 By entering a none-zero value for the Spiral Angle, you can create bevel gears with spiral teeth.
