@@ -135,6 +135,8 @@ If you enter multiple values, they will be linearly interpolated in between
 <dd>Enter a value to extend the spiral in the height direction
 <dt>Flip
 <dd>Reverse the winding direction of the spiral
+<dt>Spline
+<dd>If checked, when Total Angle = 360 deg, Radii have more than five values and its first and last values are same, the radius is interpolated by spline function instead of linear interpolation.
 </dl>
 If you enter only two values for radii, a spiral curve will be drawn with using the specified initial and final radii.
 
