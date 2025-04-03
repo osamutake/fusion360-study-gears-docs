@@ -125,5 +125,6 @@ Fusion360 は多数の点からなる非平面的な閉曲線にパッチを張�
 現状ではクラウンギアの生成にはかなり長い時間がかかってしまっています。
 
 精度と生成時間とを両立できるもっと良い方法があると良いのですが・・・
+
 ----
 [[fusion360-study-gears チュートリアルへ戻る]](https://github.com/osamutake/fusion360-study-gears/blob/main/README-ja.md#チュートリアル)

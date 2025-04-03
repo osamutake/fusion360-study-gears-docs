@@ -7,7 +7,7 @@ It may be easier to understand them by generating gears with setting various val
 But when you try, please start with small gears.
 Generating large gears may take long time and sometimes cause Fusion 360 to crash...
 
-## Cylinder Tab
+## Cylindrical Tab
 
 This tab allows generation of cylindrical gears, i.e. spur gears, helical gears, internal gears (incl. helical) and worm wheels.
 
@@ -88,8 +88,32 @@ At this moment, this specifies the normal module, so be careful
 <dd>Number of teeth for the second gear
 <dt>Width
 <dd>Width of the gear teeth
-<dt>Helical Angle
-<dd>Helix angle for helical bevel gears
+<dt>Spiral Angle
+<dd>Spiral angle for spiral bevel gears
+</dl>
+</table>
+
+## Crown Tab
+
+This tab allows generation of crown gears, which is also known as face gears.
+At this moment, helical gears are not supported.
+
+<table><tr><td>
+<a href="assets/tab_crown.png"><img src="assets/tab_crown.png" width="250"/></a>
+<td>
+<dl>
+<dt>Module
+<dd>Pitch of the teeth divided by $\pi$<br>
+At this moment, this specifies the normal module, so be careful
+<dt>Crown Teeth
+<dd>Number of teeth of the crown gear
+<dt>Pinion Teeth
+<dd>Number of teeth of the pinion gear<br>
+Crown gears will be generated for a specific size of pinion gear.
+<dt>Outer Extent
+<dd>The tooth width outward from the reference circle of the crown gear in units of the module.
+<dt>Inner Extent
+<dd>The tooth width inward from the reference circle of the crown gear in units of the module.
 </dl>
 </table>
 
@@ -146,6 +170,7 @@ Usually equal to $(\mathrm{Dedendum}) - (\mathrm{Addendum})$<br>
 This relationship can be broken when generating the shape of a hob, so it can be specified separately
 <dt>Tip Fillet
 <dd>Extension amount with fillet at the tooth tip (in terms of module)<br>
+Typical value is 0.25 if it is extended.<br>
 Used when using as a hob instead of a gear<br>
 Effective for spur gears (including helical), racks, and worms
 </dl>
