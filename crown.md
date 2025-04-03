@@ -4,7 +4,7 @@
 
 The crown gear, also known as a face gear, is a type of gear that meshes with another gear at a right angle. A standard involute gear can be used as the mating pinion gear.
 
-<img src="assets/crown.gif" width="400" />
+<a href="assets/crown.gif"><img src="assets/crown.gif" width="400" /></a>
 
 While there may not be a simple method to manufacture crown gears via cutting, the shape output by this script can be directly printed using a 3D printer without any issues.
 
@@ -18,7 +18,7 @@ Open the Crown tab and press OK to generate a crown gear with module 4 and 40 te
 
 *Note: The calculation may take considerable time.*
 
-<img src="assets/crown4.jpg" width="600" />
+<a href="assets/crown4.jpg"><img src="assets/crown4.jpg" width="600" /></a>
 
 The tooth profile of the crown gear is influenced by the number of teeth on the mating pinion gear. Therefore, the crown gear generated here must be used with a pinion gear with 12 teeth, as specified during generation.
 
@@ -28,7 +28,7 @@ Outer Extent and Inner Extent specify the tooth width outward and inward from th
 
 Open the Cylindrical tab, change only the Width to 20 mm from the default settings, and press OK to generate a pinion gear with 12 teeth.
 
-<img src="assets/crown5.jpg" width="600" />
+<a href="assets/crown5.jpg"><img src="assets/crown5.jpg" width="600" /></a>
 
 # Moving to the Meshing Position
 
@@ -41,7 +41,7 @@ To move the pinion gear to the meshing position, follow these steps:
 - The crown gear is generated such that its reference plane is positioned below the construction origin by the radius of the pinion gear's reference circle. So, the above steps makes the reference circles of the pinion and crown gears touch each other.
 - Rotate the pinion gear by half the pitch (360 deg / 12 / 2 = 15 deg).
 
-<img src="assets/crown6.gif" width="400" />
+<a href="assets/crown6.gif"><img src="assets/crown6.gif" width="400" /></a>
 
 This procedure places the gears in the correct meshing position.
 
@@ -51,7 +51,7 @@ If the Inner Extent and Outer Extent of the crown gear are not equal, adjust the
 
 Since rotational joints are generated with the crown gear and the pinion gear, by setting a motion link between them, you can rotate them together.
 
-<img src="assets/crown8.jpg" width="500" />
+<a href="assets/crown8.jpg"><img src="assets/crown8.jpg" width="500" /></a>
 
 On the motion link dialog, you need to specify the angles matching the gear ratio. Enter the angle as 360 deg divided by the number of teeth for each gear makes this simple.
 
@@ -59,7 +59,7 @@ Both gears are generated as double-layered components, with the gear body stored
 
 The joints are created between the inner and outer components. To allow only rotational movement around the rotation axis of the inner component, create a rigid group between the outer components and the root component.
 
-<img src="assets/crown9.jpg" width="500" />
+<a href="assets/crown9.jpg"><img src="assets/crown9.jpg" width="500" /></a>
 
 When creating the rigid group, uncheck the "Include child components" checkbox. Otherwise, selecting the root component will select all components at once, and creating a rigid group on them will completely fix all components, making them immovable, i.e. not rotatable.
 
@@ -67,18 +67,18 @@ After unchecking the checkbox, select the root component, the outer component of
 
 After creating the rigid group, the gears are fixed to allow only rotational movement. You should now be able to drag the gears with the mouse to observe their synchronized movement.
 
-<img src="assets/crown10.gif" width="400" />
+<a href="assets/crown10.gif"><img src="assets/crown10.gif" width="400" /></a>
 
 ## Crown Gear Tooth Profile
 
 The next figure shows a combination of a crown gear with module 8 and 36 teeth and a pinion with 12 teeth. To observe the tooth profile in detail, the width of the crown gear is set wider than that in the previous example.
 
-<img src="assets/crown7.gif" width="400" />
+<a href="assets/crown7.gif"><img src="assets/crown7.gif" width="400" /></a>
 
 As can be seen, the crown gear's tooth profile has a unique shape. Viewed from above, the tooth profile is diamond-shaped, with shorter teeth on the inner side and longer teeth on the outer side.
 
-<img src="assets/crown2.jpg" height="250" />
-<img src="assets/crown3.jpg" height="250" />
+<a href="assets/crown2.jpg"><img src="assets/crown2.jpg" height="250" /></a>
+<a href="assets/crown3.jpg"><img src="assets/crown3.jpg" height="250" /></a>
 
 This tooth shape cannot be expressed using involute curves or similar mathematical curves. Instead, it is calculated by performing an operation to remove interfering parts from a donut-shaped material between the pinion gear shape.
 
@@ -90,7 +90,7 @@ Therefore, there is no benefit to setting a large Inner Extent when generating a
 
 A crown gear with module 8 and 36 teeth and a pinion with 12 teeth were both generated with a backlash of -0.03 mm and combined. The interfering parts of the two gears were visualized while they were in motion.
 
-<img src="assets/crown1.gif" height="400" />
+<a href="assets/crown1.gif"><img src="assets/crown1.gif" height="400" /></a>
 
 The contact area of the teeth extends linearly from the side vertex of the diamond on the top surface, and the contact area rotates around the vertex as the gears rotate.
 
@@ -100,11 +100,11 @@ It is also evident that there is no contact on the inner side from the diamond's
 
 Looking closely at the crown gear tooth surface, there is a sharp bend running downward from the diamond's side vertices.
 
-<img src="assets/crown3.jpg" width="500" />
+<a href="assets/crown3.jpg"><img src="assets/crown3.jpg" width="500" /></a>
 
 This script calculates number of tooth groove shapes along the circumference and connects them with Fusion360's loft feature to create the tooth profile. Reproducing the bending part accurately requires a large number of points in the calculation.
 
-<img src="assets/crown12.jpg" width="500" />
+<a href="assets/crown12.jpg"><img src="assets/crown12.jpg" width="500" /></a>
 
 Fusion360 requires significant time to generate patch from a non-planar closed curves containing many points. As a result, generating the crown gear currently takes a significantly long time.
 

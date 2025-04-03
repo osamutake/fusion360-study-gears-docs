@@ -5,7 +5,7 @@
 クラウンギアはフェースギアとも呼ばれ、２つの軸が直角に交わる配置で噛み合うギアです。
 相手のピニオン歯車には通常のインボリュート歯車が使えます。
 
-<img src="assets/crown.gif" width="400" />
+<a href="assets/crown.gif"><img src="assets/crown.gif" width="400" /></a>
 
 クラウンギアは切削で作る場合には簡単な方法がないようですが、３Ｄプリンタを使って出力する分にはこのスクリプトが出力する形状をそのまま印刷すれば問題なく利用できると思います。
 
@@ -19,7 +19,7 @@ Crown タブを開いて OK を押すと、モジュール4で歯数40枚のク�
 
 ※計算にはかなり時間がかかります
 
-<img src="assets/crown4.jpg" width="600" />
+<a href="assets/crown4.jpg"><img src="assets/crown4.jpg" width="600" /></a>
 
 クラウンギアの歯形は相手のピニオン歯車の歯数にも影響を受けるため、ここで生成されるクラウンギアは生成時に指定した通り、歯数 12 のピニオン歯車と組み合わせて使う必要があります。
 
@@ -29,7 +29,7 @@ Outer Extent, Inner Extent はそれぞれ、クラウンギアの基準円の�
 
 Cylindrical タブを開き、デフォルトの設定値から歯幅 Width のみ 20 mm に変更して OK を押すと歯数12のピニオン歯車を生成できます。
 
-<img src="assets/crown5.jpg" width="600" />
+<a href="assets/crown5.jpg"><img src="assets/crown5.jpg" width="600" /></a>
 
 # かみ合い位置への移動
 
@@ -42,7 +42,7 @@ Cylindrical タブを開き、デフォルトの設定値から歯幅 Width の�
 - クラウンギアはちょうどピニオン歯車の半径分だけ下方に基準面が来るよう生成されるため、これでピニオン歯車とクラウンギアの基準円が接するようになります
 - ピニオン歯車をピッチの半分 (360 deg / 12 / 2 = 15 deg) だけ回転させます
 
-<img src="assets/crown6.gif" width="400" />
+<a href="assets/crown6.gif"><img src="assets/crown6.gif" width="400" /></a>
 
 これでぴったり噛み合い位置に置けました。
 
@@ -54,7 +54,7 @@ Cylindrical タブを開き、デフォルトの設定値から歯幅 Width の�
 クラウンギアにもピニオンにも始めから回転ジョイントが生成されていますので、
 これらの間にモーションリンクを設定することで両者を組み合わせて回せます。
 
-<img src="assets/crown8.jpg" width="500" />
+<a href="assets/crown8.jpg"><img src="assets/crown8.jpg" width="500" /></a>
 
 このときちょうどギア比に合わせて角度を指定する必要がありますが、
 両者とも 360 deg を歯数で割る形で入力すると間違いがないと思います。
@@ -67,7 +67,7 @@ Cylindrical タブを開き、デフォルトの設定値から歯幅 Width の�
 固定してやることで、内側のコンポーネントの回転軸周りの回転のみが許される
 状況を実現できます。
 
-<img src="assets/crown9.jpg" width="500" />
+<a href="assets/crown9.jpg"><img src="assets/crown9.jpg" width="500" /></a>
 
 剛性グループを作成する際には「子コンポーネントを含める」のチェックボックスを解除しておきます。
 そうしないとルートコンポーネントを選んだだけですべてのコンポーネントが同時に選択され、そのまま剛性グループを作るとすべてのコンポーネントが固定され、動かせなくなってしまいます。
@@ -78,20 +78,20 @@ Cylindrical タブを開き、デフォルトの設定値から歯幅 Width の�
 ここまでで歯車は回転のみが可能な形で固定されていますので、
 歯車をマウスでドラッグすることで２つの歯車が連動する様子を確認できるはずです。
 
-<img src="assets/crown10.gif" width="400" />
+<a href="assets/crown10.gif"><img src="assets/crown10.gif" width="400" /></a>
 
 ## クラウンギアの歯形
 
 こちらはモジュール 8 の歯数36のクラウンギアと、歯数12のピニオンとの組み合わせです。
 歯形の特徴を見るために、上の例よりもクラウンギアの幅を広めにとっています（モジュール単位で±3）。
 
-<img src="assets/crown7.gif" width="400" />
+<a href="assets/crown7.gif"><img src="assets/crown7.gif" width="400" /></a>
 
 クラウンギアの歯形は独特な形をしています。
 歯形を上から見るとひし形をしていて、内側には短く、外側には長く伸びています。
 
-<img src="assets/crown2.jpg" height="250" />
-<img src="assets/crown3.jpg" height="250" />
+<a href="assets/crown2.jpg"><img src="assets/crown2.jpg" height="250" /></a>
+<a href="assets/crown3.jpg"><img src="assets/crown3.jpg" height="250" /></a>
 
 この形状はインボリュート曲線などで表せるようなものではなく、実際にドーナツ状の部材からピニオンギア形状との間で干渉する部分を削り取る演算を行うことで求められています。
 
@@ -104,7 +104,7 @@ Cylindrical タブを開き、デフォルトの設定値から歯幅 Width の�
 
 モジュール 8 の歯数36のクラウンギアと、歯数12のピニオンとを両者ともバックラッシュ -0.03 mm として生成し組み合わせて動作させながら、両者の干渉する部分を可視化しました。
 
-<img src="assets/crown1.gif" height="400" />
+<a href="assets/crown1.gif"><img src="assets/crown1.gif" height="400" /></a>
 
 歯の接触領域はひし形の頂点から直線状に伸びており、歯車の回転とともにひし形の頂点を中心に接触領域が回転するような接し方をすることが分かります。
 
@@ -114,12 +114,12 @@ Cylindrical タブを開き、デフォルトの設定値から歯幅 Width の�
 
 クラウンギアの歯面をよく見ると、上面のひし形の頂点付近から下方に向かって歯面に折れ曲がりが生じています。
 
-<img src="assets/crown3.jpg" width="500" />
+<a href="assets/crown3.jpg"><img src="assets/crown3.jpg" width="500" /></a>
 
 このスクリプトでは円周方向に多数の歯溝形状を計算してそれらをロフトで繋ぐことで歯形を得ているのですが、
 この折れ曲がり部分を精度よく再現するには多数の点を取る必要があるようです。
 
-<img src="assets/crown12.jpg" width="500" />
+<a href="assets/crown12.jpg"><img src="assets/crown12.jpg" width="500" /></a>
 
 Fusion360 は多数の点からなる非平面的な閉曲線にパッチを張る演算にかなりの時間を要するため、
 現状ではクラウンギアの生成にはかなり長い時間がかかってしまっています。

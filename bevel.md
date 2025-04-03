@@ -75,11 +75,13 @@ Similar to helical gears, spiral teeth result in a larger gear size because the 
 
 I tried to create bevel gears with spiral teeth and negative backlash to verify tooth contact through interference checks. However, probably due to the complexity of the tooth profile, boolean operations frequently report failures, and the calculations could not be completed successfully.
 
-## Can It Replace Face Gears?
+## Can It Replace Crown Gears?
 
-Since calculating the exact tooth profile of face gears (crown gears) is challenging, bevel gears might be used as a substitute.
+Since calculating the exact tooth profile of crown gears, which is also known as face gears, is challenging, bevel gears might be used as a substitute.
 
 Note that with bevel gears, the tooth contact changes when the smaller gear moves along the axis direction, so care must be taken in this regard.
+
+→ Later, support for generating exact shape of crown gear was added to this script.
 
 <a href="assets/bevel3.gif"><img src="assets/bevel3.gif" width="400"></a>
 
