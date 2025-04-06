@@ -108,12 +108,16 @@ At this moment, this specifies the normal module, so be careful
 <dt>Crown Teeth
 <dd>Number of teeth of the crown gear
 <dt>Pinion Teeth
-<dd>Number of teeth of the pinion gear<br>
+<dd>Number of teeth of the mating pinion gear<br>
 Crown gears will be generated for a specific size of pinion gear.
 <dt>Outer Extent
 <dd>The tooth width outward from the reference circle of the crown gear in units of the module.
 <dt>Inner Extent
 <dd>The tooth width inward from the reference circle of the crown gear in units of the module.
+<dt>Helix Angle
+<dd>Helix angle of the mating pinion gear
+<dt>Helix Direction
+<dd>Helix direction of the mating pinion gear
 </dl>
 </table>
 

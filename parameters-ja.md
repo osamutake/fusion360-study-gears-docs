@@ -109,12 +109,16 @@
 <dt>Crown Teeth
 <dd>クラウンギアの歯数
 <dt>Pinion Teeth
-<dd>ピニオンギアの歯数<br>
+<dd>相手のピニオンギアの歯数<br>
 クラウンギアは特定の歯数のピニオンギア用に設計されます。
 <dt>Outer Extent
 <dd>クラウンギアの基準円から外向き方向の歯幅をモジュールを単位として指定する
 <dt>Inner Extent
 <dd>クラウンギアの基準円から内向き方向の歯幅をモジュールを単位として指定する
+<dt>Helix Angle
+<dd>相手のピニオンギアのはすば角
+<dt>Helix Direction
+<dd>相手のピニオンギアのはすば回転方向
 </dl>
 </table>
 
