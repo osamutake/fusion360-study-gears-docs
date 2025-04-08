@@ -1,6 +1,6 @@
 # Geneva Gear
 
-[[Back to fusion360-study-gears tutorial]](https://github.com/osamutake/fusion360-study-gears/blob/main/README.md#tutorial)
+[[Back to fusion360-study-gears tutorial]](https://github.com/osamutake/fusion360-study-gears/blob/main/README.md#tutorials)
 
 A geneva gear translates a continuous rotation movement into intermittent rotary motion as shown in the figure.
 
@@ -81,4 +81,4 @@ If the CAD design is made parameter-adjustable, it should be easy to generate Ge
 This ensures that the contact between the pin and slot, as well as the locking arcs, is correctly interpreted, allowing for accurate motion analysis as shown in the video above.
 
 ----
-[[Back to fusion360-study-gears tutorial]](https://github.com/osamutake/fusion360-study-gears/blob/main/README.md#tutorial)
+[[Back to fusion360-study-gears tutorial]](https://github.com/osamutake/fusion360-study-gears/blob/main/README.md#tutorials)

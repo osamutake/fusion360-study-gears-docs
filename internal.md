@@ -1,6 +1,6 @@
 # Generate an internal gears and combine with an external gear
 
-[[Back to fusion360-study-gears tutorial]](https://github.com/osamutake/fusion360-study-gears/blob/main/README.md#tutorial)
+[[Back to fusion360-study-gears tutorial]](https://github.com/osamutake/fusion360-study-gears/blob/main/README.md#tutorials)
 
 # Generating an internal gear
 
@@ -77,4 +77,4 @@ Based on the results, I set the center distance and confirmed that it matched pe
 <a href="assets/internal_helical5.png"><img src="assets/internal_helical5.png" height="250"/></a>
 
 ----
-[[Back to fusion360-study-gears tutorial]](https://github.com/osamutake/fusion360-study-gears/blob/main/README.md#tutorial)
+[[Back to fusion360-study-gears tutorial]](https://github.com/osamutake/fusion360-study-gears/blob/main/README.md#tutorials)

@@ -1,6 +1,6 @@
 # Combining Two Helical Gears and Checking Their Meshing
 
-[[Back to fusion360-study-gears tutorial]](https://github.com/osamutake/fusion360-study-gears/blob/main/README.md#tutorial)
+[[Back to fusion360-study-gears tutorial]](https://github.com/osamutake/fusion360-study-gears/blob/main/README.md#tutorials)
 
 ## Generating Two Helical Gears
 
@@ -142,4 +142,4 @@ Testing this, the gears meshed perfectly as calculated.
 <a href="assets/helical20.jpg"><img src="assets/helical20.jpg" width="400" /></a>
 
 ----
-[[Back to fusion360-study-gears tutorial]](https://github.com/osamutake/fusion360-study-gears/blob/main/README.md#tutorial)
+[[Back to fusion360-study-gears tutorial]](https://github.com/osamutake/fusion360-study-gears/blob/main/README.md#tutorials)
