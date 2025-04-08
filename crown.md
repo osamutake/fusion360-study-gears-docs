@@ -4,7 +4,8 @@
 
 The crown gear, also known as a face gear, is a type of gear that meshes with another gear at a right angle. A standard involute gear can be used as the mating pinion gear.
 
-<a href="assets/crown.gif"><img src="assets/crown.gif" width="400" /></a>
+<a href="assets/crown.gif"><img src="assets/crown.gif" width="300" /></a>
+<a href="assets/crown18.gif"><img src="assets/crown18.gif" width="280" /></a>
 
 While there may not be a simple method to manufacture crown gears via cutting, the shape output by this script can be directly printed using a 3D printer without any issues.
 
