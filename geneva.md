@@ -37,9 +37,9 @@ The drawing can be done as follows:
 - Draw the configuration at the moment when the pin enters the slot, as shown above.
 - Assume the centers of the driven and drive wheels are on the $x$-axis.
 - Decide the number of slots on the driven wheel (e.g., 10).
-- The angle at which the pin enters the slot is determined. (e.g., $\theta=$18 deg = 360 deg / 10 / 2).
-- Decide the outer diameter of the driven wheel (e.g., $R = 100\,\text{mm} / 2$).
-- The pin's position is determined:
+- The angle at which the pin enters the slot is determined. (e.g., $\theta=$ 18 deg = 360 deg / 10 / 2).
+- Decide the outer diameter of the driven wheel (e.g., 100 mm).
+- The pin position is determined:
   - It is at the intersection of the radius drawn at angle $\theta$ from the center of the driven wheel and the circular arc.
 - The center position of the drive wheel is determined:
   - The two line segments drawn from the pin center to the centers of the two gears are perpendicular.

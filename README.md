@@ -5,3 +5,7 @@ The project can be found at [fusion360-study-gears](https://github.com/osamutake
 ## Author
 
 Osamu Takeuchi <osamu@big.jp>
+
+## License
+
+MIT
