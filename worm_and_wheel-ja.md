@@ -56,12 +56,14 @@ Worm Spiral にウォームの条数を入力するとウォームホイール�
 
 条数が大きくなるとウォームホイールの歯形はかなりひねくれてきますが、これでちゃんと噛み合うようです。
 
-（どうも計算誤差で干渉する部分ができてしまうことがあるようなので、少しバックラッシュを大きめに取った方が良いかもしれません・・・）
-
 <a href="assets/worm-wheel18.png"><img src="assets/worm-wheel18.png" height="170" /></a>
 <a href="assets/worm-wheel19.png"><img src="assets/worm-wheel19.png" height="170" /></a>
 <a href="assets/worm-wheel20.png"><img src="assets/worm-wheel20.png" height="170" /></a>
 <a href="assets/worm-wheel21.png"><img src="assets/worm-wheel21.png" height="170" /></a>
+
+ホイールの幅を広げてみると、ウォームホイールが円筒をウォームの歯によって切削した形状を持つことがよく分かります。
+
+<a href="assets/worm-wheel22.jpg"><img src="assets/worm-wheel22.jpg" width="600" /></a>
 
 ----
 [[fusion360-study-gears チュートリアルへ戻る]](https://github.com/osamutake/fusion360-study-gears/blob/main/README-ja.md#チュートリアル)

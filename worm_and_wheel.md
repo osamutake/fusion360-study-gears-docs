@@ -58,5 +58,9 @@ As the number of threads increases, the tooth profile of the worm wheel becomes 
 <a href="assets/worm-wheel20.png"><img src="assets/worm-wheel20.png" height="170" /></a>
 <a href="assets/worm-wheel21.png"><img src="assets/worm-wheel21.png" height="170" /></a>
 
+When we set the wheel width larger, it becomes obvious that the shape of the worm wheel is made by cutting a cylinder by a worm-shaped cutting tool.
+
+<a href="assets/worm-wheel22.jpg"><img src="assets/worm-wheel22.jpg" width="600" /></a>
+
 ----
 [[Go back to fusion360-study-gears Tutorials]](https://github.com/osamutake/fusion360-study-gears/#tutorials)
