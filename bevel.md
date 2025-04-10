@@ -4,7 +4,8 @@
 
 Bevel gears are gears that can mesh at arbitrary angles between two rotational axes.
 
-<a href="assets/bevel6.gif"><img src="assets/bevel6.gif" width="400"></a>
+<a href="assets/bevel6.gif"><img src="assets/bevel6.gif" width="350"></a>
+<a href="assets/bevel26.gif"><img src="assets/bevel26.gif" width="200"></a>
 
 Bevel gears are challenging to manufacture through cutting, so various tooth profiles have been developed. Among these, when manufacturing constraints like cutting are not a concern, such as with 3D printing, bevel gears with a spherical involute curve as the tooth profile can be used, similar to how involute gears are used for planar gears. This approach is introduced in the following article:
 
@@ -15,6 +16,7 @@ This script generates bevel gears with spherical involute curves as their tooth 
 - Fillets at the tooth root
 - Undercutting for small gears
 - Spiral teeth
+- Internal bevel gear
 
 are supported. However:
 
@@ -136,6 +138,32 @@ Using this method, it can be confirmed that the tooth contact area moves continu
 
 <a href="assets/bevel23.gif"><img src="assets/bevel23.gif" height="250"></a>
 <a href="assets/bevel22.gif"><img src="assets/bevel22.gif" height="250"></a>
+
+## Internal Bevel Gears
+
+When the sizes of the two gears differ and the shaft angle is large, an internal bevel is generated.
+
+<a href="assets/bevel26.gif"><img src="assets/bevel26.gif" height="300"></a>
+
+As with standard internal gears, internal bevel gear may result in interference depending on the combination of teeth numbers. Therefore, it is crucial to carefully check for interference in Fusion 360 before proceeding with manufacturing.
+
+### How to Adjust Joint Positions
+
+Currently, this script does not generate the joint for the smaller gear meshing with the internal bevel gear at the correct position.
+
+This issue is related to the internal gear generation process within the script.
+
+The script generates the teeth of the internal bevel gear by inverting the tooth profile of a standard outward-facing bevel gear. During this process, the smaller gear is initially generated to mesh with the outward-facing gear and then moved to the position where it meshes with the internal gear to obtain the final result.
+
+Although the joint is created after moving the component to the meshing position, for some reason, the movement of the component is not properly reflected when creating the joint, resulting in the joint being generated at the pre-move position.
+
+This is likely due to a bug in Fusion 360. When attempting to "Edit" the incorrectly positioned joint, the joint immediately moves to the correct position as soon as the edit dialog is displayed, without requiring any further action.
+
+<a href="assets/bevel24.jpg"><img src="assets/bevel24.jpg" width="450"></a>
+
+<a href="assets/bevel25.jpg"><img src="assets/bevel25.jpg" width="450"></a>
+
+Until a method to generate the joint at the correct position is found, please adjust the joint position using this method.
 
 ## Can It Replace Crown Gears?
 

@@ -89,7 +89,7 @@
 <dt>Width
 <dd>歯の幅
 <dt>Spiral Angle
-<dd>曲がり歯かさば歯車の曲がり角
+<dd>曲がり歯かさ歯車の曲がり角
 </dl>
 </table>
 
