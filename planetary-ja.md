@@ -1,17 +1,19 @@
 # 遊星歯車
 
+[[fusion360-study-gears チュートリアルへ戻る]](https://github.com/osamutake/fusion360-study-gears/blob/main/README-ja.md#チュートリアル)
+
 遊星歯車を作り動かしてみます。
 
-<img src="assets/planetary24.gif" width="400" />
+<a href="assets/planetary24.gif"><img src="assets/planetary24.gif" width="400" /></a>
 
 
 遊星歯車は中央の太陽歯車と内歯車との間で遊星歯車が回転するよう組み合わされた歯車です。
 
 太陽歯車、遊星歯車、内歯車のどれを固定するかで３つの動作モードがあります。
 
-<img src="assets/planetary23.gif" width="200" />
-<img src="assets/planetary21.gif" width="200" />
-<img src="assets/planetary19.gif" width="200" />
+<a href="assets/planetary23.gif"><img src="assets/planetary23.gif" width="200" /></a>
+<a href="assets/planetary21.gif"><img src="assets/planetary21.gif" width="200" /></a>
+<a href="assets/planetary19.gif"><img src="assets/planetary19.gif" width="200" /></a>
 
 同軸のまま減速したり、回転方向を反転させたりできるという特徴を持っています。
 
@@ -35,27 +37,27 @@
 
 歯数 12 と 24 の平歯車、歯数 60 の内歯車を生成。厚さは 10 mm、内歯車の外径は 260 mm としました。
 
-<img src="assets/planetary1.jpg" width="450" />
+<a href="assets/planetary1.jpg"><img src="assets/planetary1.jpg" width="450" /></a>
 
 名前を変更しておきます。
 
-<img src="assets/planetary2.png" width="150" />
+<a href="assets/planetary2.png"><img src="assets/planetary2.png" width="150" /></a>
 
 ## 噛み合い位置に移動
 
 遊星歯車のコンポーネントを x 方向に 4 mm * (12+24) / 2 だけ移動します。
 
-<img src="assets/planetary3.png" width="400" />
+<a href="assets/planetary3.png"><img src="assets/planetary3.png" width="400" /></a>
 
 太陽歯車のボディを z 軸中心に 360 deg / 12 / 2 回転します。
 
-<img src="assets/planetary4.png" width="400" />
+<a href="assets/planetary4.png"><img src="assets/planetary4.png" width="400" /></a>
 
 ## 遊星歯車を複製
 
 z 軸の周りに３つに増やします。
 
-<img src="assets/planetary5.png" width="450" />
+<a href="assets/planetary5.png"><img src="assets/planetary5.png" width="450" /></a>
 
 ## コンポーネントに入れ全体の回転軸を作成
 
@@ -66,33 +68,33 @@ z 軸の周りに３つに増やします。
 
 先ほど作った５つの歯車を PlanetaryGearInner の中に入れました。
 
-<img src="assets/planetary6.png" width="150" />
+<a href="assets/planetary6.png"><img src="assets/planetary6.png" width="150" /></a>
 
 PlanetaryGear を 親に固定
 
-<img src="assets/planetary7.png" width="230" />
+<a href="assets/planetary7.png"><img src="assets/planetary7.png" width="230" /></a>
 
 PlanetaryGear と PlanetaryGearInner との間に構築済み回転ジョイントを作成。
 
-<img src="assets/planetary8.png" width="450" />
+<a href="assets/planetary8.png"><img src="assets/planetary8.png" width="450" /></a>
 
 ## コンポーネント内で回転軸の位置を固定
 
 PlanetaryGearInner とその子コンポーネントを選択して、剛性グループを作成。
 
-<img src="assets/planetary9.png" width="280" />
+<a href="assets/planetary9.png"><img src="assets/planetary9.png" width="280" /></a>
 
 回転ジョイントが含まれるがよいかと聞かれるので Yes
 
-<img src="assets/planetary10.png" width="220" />
+<a href="assets/planetary10.png"><img src="assets/planetary10.png" width="220" /></a>
 
 「子コンポーネントを含める」を解除して OK
 
-<img src="assets/planetary11.png" width="250" />
+<a href="assets/planetary11.png"><img src="assets/planetary11.png" width="250" /></a>
 
 ここまでで、太陽歯車、遊星歯車、内歯車が原点を中心に回転可能になっているはずです。
 
-<img src="assets/planetary12.gif" width="250" />
+<a href="assets/planetary12.gif"><img src="assets/planetary12.gif" width="250" /></a>
 
 ## モーションリンクを設定
 
@@ -102,22 +104,22 @@ PlanetaryGearInner とその子コンポーネントを選択して、剛性グ�
 
 回転量は 360 deg を歯数で割る形で指定すると分かりやすいです。
 
-<img src="assets/planetary13.png" width="450" />
+<a href="assets/planetary13.png"><img src="assets/planetary13.png" width="450" /></a>
 
 左上と左下、左下と右の遊星歯車の回転軸にモーションリンクを作成。
 
-<img src="assets/planetary14.png" height="200" />
-<img src="assets/planetary15.png" height="200" />
+<a href="assets/planetary14.png"><img src="assets/planetary14.png" height="200" /></a>
+<a href="assets/planetary15.png"><img src="assets/planetary15.png" height="200" /></a>
 
 太陽歯車と内歯車の回転軸の間にモーションリンクを作成。
 
 回転量は 360 deg を歯数で割る形で指定すると分かりやすいです。
 
-<img src="assets/planetary16.png" width="450" />
+<a href="assets/planetary16.png"><img src="assets/planetary16.png" width="450" /></a>
 
 これですべての歯車が連動するようになりました。
 
-<img src="assets/planetary17.gif" width="250" />
+<a href="assets/planetary17.gif"><img src="assets/planetary17.gif" width="250" /></a>
 
 ただ、現状ではどの歯車も固定していないのですべての歯車が回転してしまっています。
 
@@ -128,8 +130,8 @@ PlanetaryGearInner を右クリックして「ピン留め」することで遊�
 
 コンポーネントのアイコンに鍵🗝のマークが付いていることを確認してください。
 
-<img src="assets/planetary20.png" width="150" />
-<img src="assets/planetary21.gif" width="250" />
+<a href="assets/planetary20.png"><img src="assets/planetary20.png" width="150" /></a>
+<a href="assets/planetary21.gif"><img src="assets/planetary21.gif" width="250" /></a>
 
 このとき、
 
@@ -151,8 +153,8 @@ PlanetaryGearInner のピン止めは外します。
 
 すると内歯車が固定されるため、太陽歯車の回転に合わせて遊星歯車が太陽歯車の周りを回る動作を確認できます。
 
-<img src="assets/planetary18.png" width="150" />
-<img src="assets/planetary19.gif" width="250" />
+<a href="assets/planetary18.png"><img src="assets/planetary18.png" width="150" /></a>
+<a href="assets/planetary19.gif"><img src="assets/planetary19.gif" width="250" /></a>
 
 - 太陽歯車が遊星歯車に対して１回転する間に内歯車は遊星歯車に対して $-z_s/z_i=-1/5$ 回転します
 - 内歯車を固定して考えると、遊星歯車群が原点に対して $z_s/z_i=1/5$ 回転する間に太陽歯車は $1+z_s/z_i=6/5$ 回転します
@@ -169,8 +171,8 @@ $$\frac1{1+z_s/z_i}\cdot \frac{z_s}{z_i}=\frac{z_s}{z_s+z_i}=\frac16$$
 
 外歯車と遊星歯車とが回るようになります。
 
-<img src="assets/planetary22.png" width="150" />
-<img src="assets/planetary23.gif" width="250" />
+<a href="assets/planetary22.png"><img src="assets/planetary22.png" width="150" /></a>
+<a href="assets/planetary23.gif"><img src="assets/planetary23.gif" width="250" /></a>
 
 - 太陽歯車が遊星歯車に対して１回転する間に内歯車は遊星歯車に対して $-z_s/z_i=-1/5$ 回転します
 - つまり内歯車は太陽歯車の周りを $1+z_s/z_i=6/5$ 回転します
@@ -190,7 +192,7 @@ $$\frac1{1+z_s/z_i}\cdot \frac{z_s}{z_i}=\frac{z_s}{z_s+z_i}=\frac16$$
 
 そして始めに噛み合い位置に持って来る際に移動量が変わってきますが、そのほかは全く同じ手順でできますね。
 
-<img src="assets/planetary25.gif" width="400" />
+<a href="assets/planetary25.gif"><img src="assets/planetary25.gif" width="400" /></a>
 
 - 太陽歯車の歯数 9
 - 遊星歯車の歯数 12
@@ -200,3 +202,6 @@ $$\frac1{1+z_s/z_i}\cdot \frac{z_s}{z_i}=\frac{z_s}{z_s+z_i}=\frac16$$
 としてみました。
 
 ギア比は $9/(9+33) = 3/14$ になります。
+
+----
+[[fusion360-study-gears チュートリアルへ戻る]](https://github.com/osamutake/fusion360-study-gears/blob/main/README-ja.md#チュートリアル)
