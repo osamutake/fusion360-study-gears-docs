@@ -4,7 +4,8 @@
 
 Let's create and move planetary gears.
 
-<a href="assets/planetary24.gif"><img src="assets/planetary24.gif" width="400" /></a>
+<a href="assets/planetary24.gif"><img src="assets/planetary24.gif" height="200" /></a>
+<a href="assets/planetary25.gif"><img src="assets/planetary25.gif" height="200" /></a>
 
 Planetary gears are a type of gear system where planetary gears rotate between a central sun gear and an internal gear.
 
@@ -35,13 +36,33 @@ Here, we used the following configuration:
 ## Generating the Three Types of Gears
 
 Generate spur gears with `12` and `24` teeth and an internal gear with `60` teeth.
-The thickness is `10 mm`, and the outer diameter of the internal gear is `260 mm`.
+The thickness is `10 mm`, and the outer diameter of the internal gear is `260 mm`. Note that, for the spur gear with 24 teeth used as a planetary gear, the fillet setting was adjusted to be thinner than usual as described in detail below.
 
 <a href="assets/planetary1.jpg"><img src="assets/planetary1.jpg" width="450" /></a>
 
 Rename the components as `sun` and `planetary` for clarity.
 
 <a href="assets/planetary2.png"><img src="assets/planetary2.png" width="150" /></a>
+### Reducing the Fillet Setting of the Planetary Gears
+
+The selected combination of teeth numbers was as follows:
+
+- Number of teeth on the planetary gears: 24
+- Number of teeth on the internal gear: 60
+
+When generated with the default settings, involute interference occurred, preventing the gears from rotating correctly.
+
+<a href="assets/planetary26.png"><img src="assets/planetary26.png" width="350" /></a>
+
+This shows the tips of the internal gear teeth interfering with the roots of the planetary gear teeth.
+
+In this case, the issue was resolved simply by reducing the fillet radius of the planetary gears.
+
+<a href="assets/planetary27.png"><img src="assets/planetary27.png" width="350" /></a>
+
+The pink gear with the maximum fillet as the default settings interferes with the tips of the green internal gear teeth on the right. However, the orange gear with a fillet radius of 0.0 does not interfere. The blue gear with a fillet of 0.2 barely touches or avoids touching.
+
+When interference occurs only at the fillet portion of the gear root, reducing the fillet radius can be a simple solution to eliminate the interference issue.
 
 ## Moving to the Meshing Position
 
@@ -189,12 +210,17 @@ The initial meshing position will differ, but the rest of the procedure remains 
 
 <a href="assets/planetary25.gif"><img src="assets/planetary25.gif" width="400" /></a>
 
+Here, an example with the following parameters is shown.
 - Number of teeth on the sun gear: 9
 - Number of teeth on the planetary gears: 12
 - Number of teeth on the internal gear: 33
 - Helix angle: 30 deg
 
-The gear ratio is $9/(9+33) = 3/14$.
+With fixing the internal gear, the gear ratio is $9/(9+33) = 3/14$.
+
+Here, we also observed interference between the internal gear and the planetary gear generated with the default fillet setting. Again, it was resolved with setting 0.0 for the fillet radius of the planetary gears.
+
+<a href="assets/planetary28.png"><img src="assets/planetary28.png" width="350" /></a>
 
 ----
 [[Go back to fusion360-study-gears Tutorials]](https://github.com/osamutake/fusion360-study-gears/#tutorials)

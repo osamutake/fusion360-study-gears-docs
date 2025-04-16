@@ -4,7 +4,8 @@
 
 遊星歯車を作り動かしてみます。
 
-<a href="assets/planetary24.gif"><img src="assets/planetary24.gif" width="400" /></a>
+<a href="assets/planetary24.gif"><img src="assets/planetary24.gif" height="200" /></a>
+<a href="assets/planetary25.gif"><img src="assets/planetary25.gif" height="200" /></a>
 
 
 遊星歯車は中央の太陽歯車と内歯車との間で遊星歯車が回転するよう組み合わされた歯車です。
@@ -35,13 +36,35 @@
 
 ## ３種の歯車を生成
 
-歯数 12 と 24 の平歯車、歯数 60 の内歯車を生成。厚さは 10 mm、内歯車の外径は 260 mm としました。
+歯数 12 と 24 の平歯車、歯数 60 の内歯車を生成。厚さは 10 mm、内歯車の外径は 260 mm としました。ただしこのとき下記のように遊星歯車として用いる歯数 24 の平歯車については通常よりもフィレットを薄く付けるよう設定を変更しました。
 
 <a href="assets/planetary1.jpg"><img src="assets/planetary1.jpg" width="450" /></a>
 
 名前を変更しておきます。
 
 <a href="assets/planetary2.png"><img src="assets/planetary2.png" width="150" /></a>
+
+### 遊星歯車のフィレット設定を小さくする
+
+上で選んだ歯数の組み合わせは次のものでした。
+
+- 遊星歯車の歯数 24
+- 内歯車の歯数 60
+
+これらを標準設定で生成するとインボリュート干渉が生じてしまい正しく歯車が回転しないようでした。
+
+<a href="assets/planetary26.png"><img src="assets/planetary26.png" width="350" /></a>
+
+これは、内歯車の歯先が遊星歯車の歯元に当たってしまっている状況です。
+
+この問題、今回のケースでは遊星歯車のフィレットを薄くするだけで解決できました。
+
+<a href="assets/planetary27.png"><img src="assets/planetary27.png" width="350" /></a>
+
+標準設定でフィレットを最大限付けたピンクの歯車は、右の緑の内歯車の歯先と接触してしまいますが、フィレットを 0.0 としたオレンジの歯車は明らかに接触しません。青はフィレット 0.2 でこれでぎりぎり触るか、触らないか、という感じでした。
+
+歯元のフィレット部分でだけ干渉が生じる場合にはフィレット値を小さくするだけで手段で簡単に干渉の問題を取り除けることもあるようです。
+
 
 ## 噛み合い位置に移動
 
@@ -194,6 +217,8 @@ $$\frac1{1+z_s/z_i}\cdot \frac{z_s}{z_i}=\frac{z_s}{z_s+z_i}=\frac16$$
 
 <a href="assets/planetary25.gif"><img src="assets/planetary25.gif" width="400" /></a>
 
+ここでは
+
 - 太陽歯車の歯数 9
 - 遊星歯車の歯数 12
 - 内歯車の歯数 33
@@ -201,7 +226,12 @@ $$\frac1{1+z_s/z_i}\cdot \frac{z_s}{z_i}=\frac{z_s}{z_s+z_i}=\frac16$$
 
 としてみました。
 
-ギア比は $9/(9+33) = 3/14$ になります。
+内歯車を固定した場合、ギア比は $9/(9+33) = 3/14$ になります。
+
+こちらでもフィレットを最大に取ると干渉が生じましたが、フィレット 0 では問題なく回転するようでした。
+
+<a href="assets/planetary28.png"><img src="assets/planetary28.png" width="350" /></a>
+
 
 ----
 [[fusion360-study-gears チュートリアルへ戻る]](https://github.com/osamutake/fusion360-study-gears/blob/main/README-ja.md#チュートリアル)
