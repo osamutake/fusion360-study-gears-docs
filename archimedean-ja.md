@@ -97,13 +97,20 @@ $$
 m_t^2=2r\Big(r-
 \sqrt{r^2-m_n^2}\Big)
 $$
-と計算を進めると、正面モジュールとはすば角が以下のように求まります。
+と計算を進めると、$m_n$ と $r$ から正面モジュール $m_t$ とはすば角 $\beta$ を以下のように求めることができます。
 $$
-m_t=\sqrt{2r\Big(r-
-\sqrt{r^2-m_n^2}\Big)}
+\begin{aligned}
+m_t&=r\,\sqrt{2\Big(1-\sqrt{1-m_n^2/r^2}\Big)}\\
+&\sim r\,\sqrt{2\Big\{1-\Big(1-m_n^2/2r^2-m_n^4/8r^4\Big)\Big\}}\\
+&\sim m_n\,\sqrt{1+m_n^2/4r^2}\\
+&\sim m_n\,\Big(1+m_n^2/8r^2\Big)\\
+\end{aligned}
 $$
 $$
-\beta=\sin^{-1}\sqrt{\frac{1-\sqrt{1-m_n^2/r^2}}{2}\\}
+\begin{aligned}
+\beta&=\sin^{-1}\sqrt{\frac{1-\sqrt{1-m_n^2/r^2}}{2}}\\
+&\sim m_n/2r
+\end{aligned}
 $$
 
 結局のところ、今回の場合 $m_n=4$ に対して $m_t=4.0022$ ですので、両者を厳密に区別する必要性はあまりなさそうです。
